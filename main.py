@@ -4,13 +4,11 @@ from dotenv import load_dotenv
 from pathlib import Path
 import os
 
+
 env_path = Path('.') / '.env'
 load_dotenv(dotenv_path=env_path, verbose=True)
 TOKEN = os.getenv('TOKEN')
 CHAT_ID = os.getenv('CHAT_ID')
-
-# TOKEN = '1241115564:AAGtv97ps9Yxma3lfAcNpPF5qi5SQSzTsMA'
-# CHAT_ID = '134640247'
 
 
 def reply(text):
